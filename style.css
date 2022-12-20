@@ -6,14 +6,18 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
 body{
     background-color: rgb(238, 213, 179);
     width: 100%;
-    height: 280vh;
+    height: 260vh;
 }
 .large__container{
     width: 90%;
-    height: 270vh;
+    height: 250vh;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
     background-color:  white;
     margin: 5rem auto;
@@ -60,6 +64,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 99;
     
 }
 .logo{
@@ -76,10 +81,23 @@ body{
     height: 6rem;
     padding-right: 50px;
     font-size: 17px;
+    background-color: aquamarine;
 }
 .navor a{
     color: white;
 }
+/* ==================NAVOR MEDIA QUERY =================== */
+@media(max-width:768px){
+ .navor  ul{
+     flex-direction: column;
+     flex-wrap: wrap;
+     width: 250px;
+     height: 400px;
+     margin-top: 20rem;
+     
+ }
+}
+/* ===================END OF NAVOR MEDIA QUERY =============== */
 .content__1{
     margin-left: 5rem;
     margin-top: 7rem;
@@ -146,6 +164,7 @@ body{
     border-radius: 20px;
     
 }
+ 
 .content__3__words{
     display: flex;
     align-items: center;
@@ -157,6 +176,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    ;
   
 }
 .arrow__right__3{

@@ -37,3 +37,29 @@ console.log(largestNumbersTwo([[4, 2, 9, 7], [64, 3, 97, 34], [67, 82, 1, 10], [
 function findmax(str){
     
 }
+
+
+
+// function greeting(name) {
+//     alert(`Hello, ${name}`);
+//   }
+  
+//   function processUserInput(callback) {
+//     const name = prompt("Please enter your name.");
+//     callback(name);
+//   }
+  
+//   processUserInput(greeting);
+  
+
+const users = [
+    { name: 'John', age: 34 },
+    { name: 'Amy', age: 20 },
+    { name: 'camperCat', age: 10 }
+  ];
+  
+  const usersObj = users.reduce((obj, user) => {
+    obj[user.name] = user.age;
+    return obj;
+  }, {});
+  console.log(usersObj);
